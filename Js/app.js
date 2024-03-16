@@ -1,10 +1,18 @@
-const iconMenu = document.querySelector('.login i');
+const iconMenu = document.querySelector('.bx-menu');
 const menuLinks = document.querySelector('nav .links');
+const close = document.querySelector('.close');
 
-console.log(menuLinks)
+iconMenu.addEventListener('click', showMenu);
+close.addEventListener('click', closeMenu);
 
-document.addEventListener('click', ()=>{
-    if(iconMenu.classList.contains('bx-menu')){
-       menuLinks.classList.toggle('hideMenu')
-    }
-})
+function showMenu(){
+    menuLinks.style.height = 'auto';
+    close.style.display="block";
+    iconMenu.style.display='none';
+}
+
+function closeMenu(){
+    menuLinks.style.height = 0;
+    close.style.display="none";
+    iconMenu.style.display='block';
+}

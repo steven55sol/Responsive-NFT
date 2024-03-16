@@ -372,11 +372,6 @@ footer .right p{
 @media screen and (max-width:1024px ){
     nav{
        padding: 0;
-       transition: all .3s linear;
-    }
-    .hideMenu{
-        height: 0;
-        overflow: hidden;
     }
 
     nav .links{
@@ -387,6 +382,8 @@ footer .right p{
         top: 80px;
         background-color: #111;
         margin-right: 0;
+        height: 0;
+        overflow: hidden;
     }
 
     nav a.logo{
@@ -424,6 +421,10 @@ footer .right p{
         display: block;
         font-size: 30px;
         cursor: pointer;
+    }
+
+    nav .login .close{
+        display: none;
     }
 
     header{
